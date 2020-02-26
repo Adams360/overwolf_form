@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Overwolf || Login</title>
+</head>
+<body>
+
+    <div class="login">
+
+        <div class="login__bg"></div>
+
+    
+        <div class="login__inner">
+            <!-- Welcome Text -->
+            <h2>Welcome, your armory awaits</h2>
+            <p>Log in to download apps for your favorite games</p>
+            <!-- Login Buttons -->
+
+                <button class="btn btn--google">
+                    <span class="btn--logo">
+                        <svg id="login-social-google" viewBox="0 0 30 30">
+                            <g>
+                                <rect x="5" y="5" width="20" height="20" rx="1" ry="1" fill="#fff"></rect>
+                                <g>
+                                    <path d="M21.72,15.16a7.39,7.39,0,0,0-.13-1.43H15v2.71h3.77a3.24,3.24,0,0,1-1.4,2.11V20.3h2.26a6.78,6.78,0,0,0,2.09-5.14Z" fill="#4285f4"></path>
+                                    <path d="M15,22a6.68,6.68,0,0,0,4.63-1.7l-2.26-1.75a4.22,4.22,0,0,1-6.29-2.22H8.74v1.81A7,7,0,0,0,15,22Z" fill="#34a853"></path>
+                                    <path d="M11.08,16.33a4.13,4.13,0,0,1,0-2.66V11.86H8.74a7,7,0,0,0,0,6.28l2.34-1.81Z" fill="#fbbc05"></path>
+                                    <path d="M15,10.78a3.81,3.81,0,0,1,2.68,1.05l2-2A6.7,6.7,0,0,0,15,8a7,7,0,0,0-6.26,3.86l2.34,1.81A4.19,4.19,0,0,1,15,10.78Z" fill="#ea4335"></path>
+                                </g>
+                            </g>
+                        </svg>
+                    </span>
+                    Log in with Google
+                </button>
+                <button class="btn btn--facebook">
+                    <span class="btn--logo">
+                        <svg id="login-social-facebook" viewBox="0 0 30 30">
+                            <path d="M23.89,5H6.11A1.1,1.1,0,0,0,5,6.11V23.89A1.1,1.1,0,0,0,6.11,25h9.57V17.28H13.07v-3h2.6V12a3.64,3.64,0,0,1,3.88-4,22.78,22.78,0,0,1,2.34.14v2.7H20.3c-1.25,0-1.49.59-1.49,1.46v1.93h3l-.39,3H18.81V25h5.08A1.1,1.1,0,0,0,25,23.89h0V6.11A1.1,1.1,0,0,0,23.89,5Z" fill="#fff"></path>
+                        </svg>
+                    </span>
+                    Log in with Facebook
+                </button>
+                <button class="btn btn--discord">
+                    <span class="btn--logo">
+                        <svg id="login-social-discord" viewBox="0 0 30 30">
+                            <path d="M13.3,13.83a1.26,1.26,0,1,0,1.17,1.26A1.21,1.21,0,0,0,13.3,13.83Zm4.17,0a1.26,1.26,0,1,0,1.17,1.26A1.21,1.21,0,0,0,17.47,13.83ZM23,4.32H7.71A2.34,2.34,0,0,0,5.37,6.66V22a2.33,2.33,0,0,0,2.34,2.33h13l-.6-2.09L25.37,27V6.66A2.34,2.34,0,0,0,23,4.32Zm-4.41,14.8-.76-.92a3.62,3.62,0,0,0,2.07-1.34,6.43,6.43,0,0,1-1.31.66A7.39,7.39,0,0,1,17,18a7.92,7.92,0,0,1-3,0,9.43,9.43,0,0,1-1.68-.49,6,6,0,0,1-.83-.38l-.11-.06,0,0c-.21-.12-.32-.2-.32-.2a3.55,3.55,0,0,0,2,1.34l-.77.94A4.15,4.15,0,0,1,8.77,17.4a15.14,15.14,0,0,1,1.64-6.61A5.73,5.73,0,0,1,13.62,9.6l.12.14a7.8,7.8,0,0,0-3,1.48l.68-.33A8.51,8.51,0,0,1,14,10.18l.19,0a9.82,9.82,0,0,1,2.31,0,9.58,9.58,0,0,1,3.44,1.09A7.6,7.6,0,0,0,17.1,9.78l.16-.18a5.73,5.73,0,0,1,3.21,1.19,15.14,15.14,0,0,1,1.64,6.61A4.18,4.18,0,0,1,18.62,19.12Z" fill="#fff"></path>
+                        </svg>
+                    </span>
+                    Log in with Discord
+                </button>
+
+            <span class="divider-text">Or</span>
+
+            <div class="input-group">
+                <svg id="login-email" viewBox="0 0 30 30">
+                    <polygon points="12.8,15.1 8,11 8,19.5"></polygon>
+                    <polygon points="16.4,14.7 21.9,10 8.1,10 15,15.9"></polygon>
+                    <polygon points="17.2,15.1 22,19.5 22,11"></polygon>
+                    <polygon points="16.6,15.6 15,17 13.4,15.6 8.7,20 21.3,20"></polygon>
+                </svg>
+                <input type="email" class="form-control" placeholder="Email">
+            </div>
+     
+             <div class="input-group">
+                <svg id="login-password" viewBox="0 0 30 30">
+                    <path d="M18,15v-4c0-1.1-0.9-2-2-2h-2c-1.1,0-2,0.9-2,2v4h-2v6h10v-6H18z M13,15v-4c0-0.5,0.5-1,1-1h2c0.5,0,1,0.5,1,1v4H13z"></path>
+                </svg>
+            
+                 <input type="password" class="form-control" placeholder="Password">
+             </div>
+            <button class="btn btn--login" type="submit">
+                <span class="text">
+                    Log in
+                </span>
+
+                <svg width="17" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.73.764a8.341 8.341 0 00-2.805 2.642A7.809 7.809 0 00.67 6.957a7.232 7.232 0 00.588 3.623 7.113 7.113 0 002.294 2.84 7.55 7.55 0 003.458 1.383 8.171 8.171 0 003.805-.398 8.42 8.42 0 003.254-2.085 8.06 8.06 0 001.935-3.28l-1.505-.357a6.45 6.45 0 01-1.547 2.625 6.736 6.736 0 01-2.604 1.668 6.537 6.537 0 01-3.044.318 6.039 6.039 0 01-2.766-1.107A5.69 5.69 0 012.7 9.917a5.786 5.786 0 01-.47-2.9 6.247 6.247 0 011.005-2.84A6.673 6.673 0 015.48 2.062l-.75-1.3z" fill="#fff"/></svg>
+
+
+            </button>
+
+
+  
+
+            <div class="help">
+                <a class="link block" href="#">Forgot password?</a>
+                <span class="small-text">New to Overwolf?  <a class="link" href="#">Create an account</a></span>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/app.js"></script>
+</body>
+</html>

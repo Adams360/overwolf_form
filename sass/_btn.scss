@@ -1,0 +1,141 @@
+.btn {
+    font-weight: 400;
+    color:$purple-white;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-appearance: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1.4rem;
+    border-radius: .25rem;
+    width: 100%;
+    height: 3.8rem;
+    margin: .8rem 0;
+
+    position: relative;
+
+    transition: all .15s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+ 
+
+
+
+
+
+    &--google {
+        background-color: $color-google;
+    }
+    &--facebook {
+        background-color: $color-facebook;
+    }
+    &--discord {
+        background-color: $color-discord;
+    }
+
+    &--logo {
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+
+        position: absolute;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &::after {
+            content: "";
+            height: 3rem;
+            width: 2px;
+            background-color: $purple-white;
+            display: inline-block;
+            margin-left: .8rem;
+        }
+
+        
+        svg {
+            width: 30px;
+            height: 30px;
+            margin: 0 5px;
+            fill: #F4F2FF;
+            
+        }
+    }
+
+    &--login {
+        background-color: $pink;
+        min-height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    margin: 15px auto;
+
+    transition: background-color .15s linear,
+                transform .4s ease-in-out,
+                width .3s ease-in-out, 
+                border-radius .3s ease-in-out;
+
+        & > * {
+            position: absolute;
+        }
+
+        .text {
+            transition: .8s;
+            opacity: 1;
+        }
+
+        svg {
+
+            width: 18px;
+            height: 18px;
+
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            width: 18px;
+            height: 18px;
+            transition: opacity .4s, transform 0.4s ease-in-out;
+            transform: scale(0.4);
+            opacity: 0;
+        }
+
+        &.loader {
+            border-radius: 50%;
+            line-height: 1;
+            height: 45px;
+            width: 45px;
+            
+            .text {
+                transition: 0.4s;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                height: 17px;
+                opacity: 0;
+            }
+
+            svg {
+                opacity: 1;
+                animation: spin .8s linear infinite;
+           
+            }
+        }
+
+    }
+}
+
